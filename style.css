@@ -1,0 +1,414 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background:url("images/julljus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  font-family: "Kalam", cursive;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: white;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h3{
+  margin-top:5px;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#logga {
+  width: 16em;
+  object-fit: contain;
+  margin-top: 2em;
+}
+.year {
+  margin: 0;
+  font-size: 4.5em;
+}
+h2 {
+  font-size: 2.5em;
+}
+
+.scene {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 50px auto;
+  perspective: 100px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-718px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: 10px;
+  top: 10px;
+  border: 1px solid black;
+  line-height: 100px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.carousel__cell:nth-child(24n + 1) {
+  background:#CC9901;
+  background-image: url("images/jarnek.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 2) {
+  background:rgba(183, 13, 0); 
+  background-image: url("images/hus.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  
+}
+.carousel__cell:nth-child(24n + 3) {
+  background:#259627;
+  background-image: url("images/bells.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 4) {
+  background:#CC9901;
+  background-image: url("images/eld.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 5) {
+  background:rgba(183, 13, 0);
+  background-image: url("images/glob.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%; 
+}
+.carousel__cell:nth-child(24n + 6) {
+  background:#259627;
+  background-image: url("images/julkort.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 7) {
+  background:#CC9901;
+  background-image: url("images/krans.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 8) {
+  background:rgba(183, 13, 0); 
+  background-image: url("images/kula.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 9) {
+  background:#259627;
+  background-image: url("images/pynt.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 10) {
+  background:#CC9901;
+  background-image: url("images/ren.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 11) {
+  background:rgba(183, 13, 0); 
+  background-image: url("images/snow.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  
+}
+.carousel__cell:nth-child(24n + 12) {
+  background:#259627;
+  background-image: url("images/snowman.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 13) {
+  background:#CC9901;
+  background-image: url("images/lucia1120.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 14) {
+  background:rgba(183, 13, 0); 
+  background-image: url("images/socka.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 15) {
+  background:#259627;
+  background-image: url("images/vante.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 16) {
+  background:#CC9901;
+  background-image: url("images/lampor.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 17) {
+  background:rgba(183, 13, 0);
+  background-image: url("images/ornament.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%; 
+}
+.carousel__cell:nth-child(24n + 18) {
+  background:#259627;
+  background-image: url("images/firework.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.carousel__cell:nth-child(24n + 19) {
+  background:#CC9901;
+  background-image: url("images/sticks.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 20) {
+  background:rgba(183, 13, 0); 
+  background-image: url("images/cloths.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 21) {
+  background:#259627;
+  background-image: url("images/sack.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 22) {
+  background:#CC9901;
+  background-image: url("images/paket.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 23) {
+  background:rgba(183, 13, 0); 
+  background-image: url("images/julgran.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.carousel__cell:nth-child(24n + 0) {
+  background:#259627;
+  background-image: url("images/tomte_1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(718px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(15deg) translateZ(718px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(30deg) translateZ(718px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(45deg) translateZ(718px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(60deg) translateZ(718px);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(75deg) translateZ(718px);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(90deg) translateZ(718px);
+}
+.carousel__cell:nth-child(8) {
+  transform: rotateY(105deg) translateZ(718px);
+}
+.carousel__cell:nth-child(9) {
+  transform: rotateY(120deg) translateZ(718px);
+}
+
+.carousel__cell:nth-child(10) {
+  transform: rotateY(135deg) translateZ(718px);
+}
+.carousel__cell:nth-child(11) {
+  transform: rotateY(150deg) translateZ(718px);
+}
+.carousel__cell:nth-child(12) {
+  transform: rotateY(165deg) translateZ(718px);
+}
+.carousel__cell:nth-child(13) {
+  transform: rotateY(180deg) translateZ(718px);
+}
+.carousel__cell:nth-child(14) {
+  transform: rotateY(195deg) translateZ(718px);
+}
+.carousel__cell:nth-child(15) {
+  transform: rotateY(210deg) translateZ(718px);
+}
+.carousel__cell:nth-child(16) {
+  transform: rotateY(225deg) translateZ(718px);
+}
+.carousel__cell:nth-child(17) {
+  transform: rotateY(240deg) translateZ(718px);
+}
+.carousel__cell:nth-child(18) {
+  transform: rotateY(255deg) translateZ(718px);
+}
+
+.carousel__cell:nth-child(19) {
+  transform: rotateY(270deg) translateZ(718px);
+}
+.carousel__cell:nth-child(20) {
+  transform: rotateY(285deg) translateZ(718px);
+}
+.carousel__cell:nth-child(21) {
+  transform: rotateY(300deg) translateZ(718px);
+}
+.carousel__cell:nth-child(22) {
+  transform: rotateY(315deg) translateZ(718px);
+}
+.carousel__cell:nth-child(23) {
+  transform: rotateY(330deg) translateZ(718px);
+}
+.carousel__cell:nth-child(24) {
+  transform: rotateY(345deg) translateZ(718px);
+}
+
+.carousel__cell:nth-child(24n + 1):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 2):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 3):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 4):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 5):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 6):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 7):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 8):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 9):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 10):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 11):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 12):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+
+.carousel__cell:nth-child(24n + 13):hover {
+  background-image: url("images/lucia2120.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+ 
+}
+.carousel__cell:nth-child(24n + 14):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 15):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 16):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 17):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 18):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 19):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 20):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 21):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 22):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 23):hover {
+  box-shadow: 0px 0px 50px 10px white inset;
+}
+.carousel__cell:nth-child(24n + 0):hover {
+  background-image: url("images/tomte_2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+.previous-button,
+.next-button{
+  font-size: 3rem;
+  color: #CC9901;
+  padding:0 0.25em;
+}
+
+.previous-button:hover,
+.next-button:hover{
+  cursor: pointer;
+  color: #259627;
+  transform: scale(1.1);
+  transition: transform 400ms linear;
+}
+footer {
+  margin-top: auto;
+  text-align: center;
+}
+footer h3 {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
